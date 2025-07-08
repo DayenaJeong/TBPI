@@ -83,16 +83,33 @@ TBPI/
 
 ## 📦 Dependencies
 
-* Python ≥ 3.8
-* PyTorch ≥ 1.12
-* NumPy, SciPy, Matplotlib
-* For DDIM evaluation: `diffusers`, `transformers`, `PIL`
+This project is implemented in **Python (≥3.8)** using **Jupyter Notebooks**.  
+To run the notebooks properly, install the following key packages:
 
-Install via:
+- `torch` (PyTorch ≥ 1.12)
+- `numpy`
+- `scipy`
+- `matplotlib`
+- `seaborn`
+- `PIL` or `pillow`
+- `tqdm`
+- For DDIM experiments: `diffusers`, `transformers`
+
+You can install them via:
 
 ```bash
-pip install -r requirements.txt
+pip install torch numpy scipy matplotlib seaborn pillow tqdm diffusers transformers
+````
+
+Or, create a virtual environment:
+
+```bash
+python -m venv tbpi-env
+source tbpi-env/bin/activate  # (or tbpi-env\Scripts\activate on Windows)
+pip install -r requirements.txt  # (if you manually generate one)
 ```
+
+> 💡 Tip: You can extract exact package versions by exporting from your current environment using `pip freeze > requirements.txt` if needed.
 
 ---
 
